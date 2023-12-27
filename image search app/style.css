@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    line-height: 1.6;
+}
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0px 60px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 60px;
+}
+.search-input{
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    box-shadow: 0 0 6px rgb(0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 18px;
+    color:#333;
+    border: none;
+}
+.search-button{
+    padding: 10px 20px;
+    background-color: #138065;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0 0 6px rgb(0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.searchresults{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.search-result{
+    margin-bottom: 60px;
+    width:30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgb(0, 0, 0.2);
+    overflow: hidden;
+}
+.search-result>img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.4s ease-in-out;
+}
+.search-result>img:hover{
+    opacity: 0.8;    
+    cursor: pointer;
+}
+.search-result>a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+#button{
+    background-color: #008cba;
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width:768px){
+    .searchresults{
+        padding: 0px 20px;
+    }
+    .search-result{
+        width: 45%;
+    }
+}
+@media screen and (max-width:480px){
+    .search-result{
+        .searchresults{
+            padding: 0px 20px;
+        }
+        width: 100%;
+    }
+}
